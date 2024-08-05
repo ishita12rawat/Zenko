@@ -1,0 +1,114 @@
+.containeer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between items */
+  
+}
+/* App.css */
+
+/* Container for all restaurant items */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style for individual restaurant items */
+.restaurant-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Animation for fading in the restaurant items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect to scale up, add shadow, and change background color */
+.restaurant-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Style for restaurant images */
+.restaurant-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation for fading in images */
+.restaurant-item img {
+  opacity: 0;
+  animation: imageFadeIn 1s 0.5s forwards;
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styling for text elements */
+.restaurant-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for text color */
+.restaurant-item:hover .restaurant-name {
+  color: #007bff;
+}
+
+/* Styling for other text elements */
+.restaurant-address,
+.restaurant-website,
+.restaurant-city,
+.restaurant-country,
+.restaurant-type {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* Bold and colored text elements on hover */
+.restaurant-item:hover .restaurant-address,
+.restaurant-item:hover .restaurant-website,
+.restaurant-item:hover .restaurant-city,
+.restaurant-item:hover .restaurant-country,
+.restaurant-item:hover .restaurant-type {
+  color: #007bff;
+}
+
+/* Additional styles for website, city, country, and type */
+.restaurant-website,
+.restaurant-city,
+.restaurant-country,
+.restaurant-type {
+  font-weight: bold;
+}
