@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Zenko/static/css/main.08f98926.css",
-    "main.js": "/Zenko/static/js/main.9bb50db0.js",
+    "main.js": "/Zenko/static/js/main.d486e81c.js",
     "static/js/453.311fc56e.chunk.js": "/Zenko/static/js/453.311fc56e.chunk.js",
     "index.html": "/Zenko/index.html",
     "main.08f98926.css.map": "/Zenko/static/css/main.08f98926.css.map",
-    "main.9bb50db0.js.map": "/Zenko/static/js/main.9bb50db0.js.map",
+    "main.d486e81c.js.map": "/Zenko/static/js/main.d486e81c.js.map",
     "453.311fc56e.chunk.js.map": "/Zenko/static/js/453.311fc56e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08f98926.css",
-    "static/js/main.9bb50db0.js"
+    "static/js/main.d486e81c.js"
   ]
 }
